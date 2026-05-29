@@ -1,10 +1,5 @@
 # Curso de JavaScript e TypeScript do Basico ao Avancado
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Em%20estudo-3178C6?logo=typescript&logoColor=fff)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-Back--end-339933?logo=node.js&logoColor=fff)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-Front--end-61DAFB?logo=react&logoColor=000)](https://react.dev/)
-
 Repositorio de estudos baseado no curso **"JavaScript e TypeScript do basico ao avancado (JS e TS)"**, com exercicios, exemplos e pequenos projetos desenvolvidos ao longo das aulas.
 
 O foco deste material e consolidar fundamentos de **JavaScript moderno**, evoluir para **TypeScript**, praticar **front-end e back-end** e construir base solida para desenvolvimento **full stack** com ferramentas e bibliotecas amplamente usadas no mercado.
