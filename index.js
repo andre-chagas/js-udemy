@@ -1,17 +1,20 @@
-// String, number, undefined, null, boolean
-const nome = 'André'; // string
-const nome1 = "André"; // string
-const nome2 = `André`; // string
-const num1 = 10; // number
-const num2 = 10.52; // number
-let nomeAluno; // undefined -> não aponta para local nenhuma na memória
-const sobrenomeAluno = null; // Nulo -> não aponta para local nenhuma na memória
-const aprovado = false; // Boolean = true, false (lógico)
+const elementos = [
+    {tag: 'p', texto: 'Qualquer texto que eu quiser.'},
+    {tag: 'div', texto: 'Frase 2.'},
+    {tag: 'section', texto: 'Frase 3.'},
+    {tag: 'footer', texto: 'Frase 4.'},
+];
 
+const container = document.querySelector('.container');
+const div = document.createElement('div');
 
-let a = 2;
-const b = a;
-console.log(a, b); // 2, 2
+for (let i = 0; i < elementos.length; i++) {
+    let { tag, texto } = elementos[i];
+    let tagCriada = document.createElement(tag);
+    let textoCriado = document.createTextNode(texto);
 
-a = 3;
-console.log(a, b); // 3, 2
+    tagCriada.appendChild(textoCriado);
+    div.appendChild(tagCriada);
+}
+
+container.appendChild(div);
