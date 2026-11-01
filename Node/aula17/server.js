@@ -11,6 +11,7 @@ mongoose.connect(process.env.CONNECTIONSTRING)
   .catch(e => console.log(e));
 
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 const flash = require('connect-flash');
 const routes = require('./routes');
 const path = require('path');
@@ -20,6 +21,7 @@ const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/midd
 
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 const sessionOptions = session({
